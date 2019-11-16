@@ -12,5 +12,6 @@ jobs:
         FTP_SERVER: ftpx.forpsi.com
         FTP_USERNAME: adam_bartacom
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        REMOTE_DIR: www
         ARGS: --delete
         # --delete arg will delete files on the server if you've deleted them in git

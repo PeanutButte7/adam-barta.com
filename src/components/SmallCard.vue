@@ -1,7 +1,16 @@
 <template>
-    <div class="smallCard border border-light">
-        <img :src="" alt="Image">
-        <h1>{{ headline }}</h1>
+    <div class="smallCard">
+        <b-card
+                title-variant="card_title"
+                overlay
+                :img-src="`${publicPath}${imgSource}`"
+                img-alt="Card Image"
+                text-variant="dark"
+                :title="isHovered ? title : ''"
+                :sub-title="isHovered ? description : ''"
+                @mouseover="isHovered = true" @mouseleave="isHovered = false"
+        >
+        </b-card>
     </div>
 </template>
 
@@ -9,25 +18,32 @@
     export default {
         name: 'smallCard',
         props: {
-            headline: {
+            title: {
                 required: true,
                 type: String
             },
             imgSource: {
                 required: true,
                 type: String
+            },
+            description: {
+                required: false,
+                type: String
             }
         },
-        data() {
+        data () {
             return {
-                image: this.imgSource
+                publicPath: process.env.BASE_URL,
+                isHovered: false
             }
+        },
+        methods: {
+
         }
     }
 </script>
 
 <style lang="scss" scoped>
-    .smallCard {
-        height: 500px;
+    .card-card_title{
     }
 </style>

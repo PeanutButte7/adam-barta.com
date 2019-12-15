@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Navbar from '../views/Navbar.vue'
+import GPFC from '../views/projects/GPFC.vue'
 import Portfolio from '../views/Portfolio.vue'
 import Contacts from '../views/Contacts.vue'
 import About from '../views/About.vue'
@@ -11,28 +10,23 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'navbar',
-    component: Navbar
-  },
-  {
-    path: '/',
-    name: 'home',
-    component: Home
-  },
-  {
-    path: '/',
     name: 'portfolio',
     component: Portfolio
   },
   {
-    path: '/',
+    path: '/contacts',
     name: 'contacts',
     component: Contacts
   },
   {
-    path: '/',
+    path: '/about',
     name: 'about',
     component: About
+  },
+  {
+    path: '/gpfc',
+    name: 'gpfc',
+    component: GPFC
   }
 ]
 

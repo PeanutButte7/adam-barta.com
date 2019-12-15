@@ -3,14 +3,16 @@
     <div id="nav">
       <div class="vertical-nav" id="sidebar">
         <div class="py-4 px-3 mb-4">
-          <div class="media d-flex align-items-center">
-            <b-img :src="require('./assets/LogoLong.jpg')" fluid alt=""/>
-          </div>
+            <router-link to="/">
+              <div class="media d-flex align-items-center">
+                <b-img :src="require('./assets/LogoLong.jpg')" fluid alt="" />
+              </div>
+            </router-link>
         </div>
 
         <ul class="nav flex-column mb-0">
           <li class="nav-item">
-            <router-link to="/portfolio">Portfolio</router-link>
+            <router-link to="/">Portfolio</router-link>
           </li>
           <li class="nav-item">
             <router-link to="/contacts">Contacts</router-link>
@@ -21,29 +23,21 @@
         </ul>
       </div>
     </div>
-  <router-view/>
+    <div>
+      <router-view class="page-content"/>
+    </div>
   </div>
 </template>
 
-<style lang="scss">
-@import "./styles/main";
-</style>
-
 <script>
-  //import Navbar from "views/Navbar";
-
   export default {
     name: 'app',
     components: {
-      //Navbar
     }
   }
 </script>
 
 <style lang="scss">
-  html {
-    font-size: 24px;
-  }
 
   .vertical-nav {
     min-width: 14.6rem;
@@ -62,7 +56,8 @@
   }
 
   #nav {
-  text-align: left;
+    text-align: left;
+    padding: 0;
 
     a {
       padding-left: 2.4rem;
@@ -83,5 +78,17 @@
 
   #nav a.router-link-exact-active {
     color: white;
+  }
+
+  @media (max-width: 500px) {
+    #nav {
+      display: none;
+    }
+
+    .page-content {
+      width: 100%;
+      margin-left: 0;
+      transition: all 0.4s;
+    }
   }
 </style>

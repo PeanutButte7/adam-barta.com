@@ -2,11 +2,11 @@
     <div class="gpfc">
         <b-img :src="require('../../assets/GPFC/Head.png')" fluid alt="GPFC Header" />
         <b-container>
-            <b-row class="mt-4">
-                <b-col cols="12" md="6" class="ml-md-4">
+            <b-row class="mt-5" id="about">
+                <b-col cols="12" md="6" class="ml-md-5">
                     <b-img :src="require('../../assets/GPFC/Logo.svg')" fluid alt="GPFC Logo"/>
                 </b-col>
-                <b-col class="mr-md-4">
+                <b-col class="mr-md-5">
                     <h2>About the Brand</h2>
                     <p>GPFC - Gymnastic Parkour Freerun Club is a Czech company focused on making Parkour and Freerunning accessible to young people. The company had already established a small presence in the market but needed a more solid and polished design to grow.</p>
                 </b-col>
@@ -16,7 +16,7 @@
                     <h2>The Rebranding Process</h2>
                     <p>As a part of the rebranding, a new website and logo were needed. I have created a logo with a clear silhouette so it’s recognizable no matter the color. Several variants were also made that can be used on merchandise or in other specific situations.</p>
                     <h3 id="requirementsHeadline" class="requirements mt-md-5">Requirements</h3>
-                    <p class="requirements">The logo must include "Gymnastic Parkour Freerun Club" and has to feel energetic.</p>
+                    <p class="requirements ml-md-5">The logo must include "Gymnastic Parkour Freerun Club" and has to feel energetic.</p>
                 </b-col>
                 <b-col cols="12" md="6" id="lines">
                     <b-img :src="require('../../assets/GPFC/LogoInverted.svg')" fluid alt="GPFC Inverted Logo"/>
@@ -43,6 +43,20 @@
                     <h4 class="mt-3">Girls T-Shirt</h4>
                 </b-col>
             </b-row>
+            <b-row id="designHeadline" class="mt-5">
+                <b-col>
+                    <h1 class="mt-5 mb-5">The Design Process</h1>
+                </b-col>
+            </b-row>
+            <b-row class="mt-5">
+                <b-col cols="12" md="6" class="ml-md-5">
+                    <h2>Inspiration</h2>
+                    <p>The most significant sponsor of GPFC is Gatorade. That's where a lot of inspiration came from. I have tried to take the main aspect of their logo  - lightning strike and incorporate it into the design.</p>
+                </b-col>
+                <b-col class="mr-md-5">
+                    <b-img :src="require('../../assets/GPFC/GatoradeLogo.svg')" fluid alt="GPFC Logo"/>
+                </b-col>
+            </b-row>
         </b-container>
     </div>
 </template>
@@ -59,6 +73,10 @@
     .gpfc {
         background-color: white;
         color: black;
+
+        .container {
+            max-width: max-content;
+        }
     }
 
     #lines {
@@ -81,6 +99,12 @@
     }
 
     #merchandise {
+        text-align: center;
+    }
+
+    #designHeadline {
+        background-color: #FF4500;
+        color: white;
         text-align: center;
     }
 

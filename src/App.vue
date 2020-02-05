@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
       <div class="vertical-nav" id="sidebar">
-        <div class="py-4 px-3 mb-4">
+        <div class="py-0 px-3 mb-4">
             <router-link to="/">
               <div class="media d-flex align-items-center">
                 <b-img :src="require('./assets/LogoLong.jpg')" fluid alt="" />
@@ -15,10 +15,13 @@
             <router-link to="/">Portfolio</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/contacts">Contacts</router-link>
+            <a class="underline" target="_blank" href="https://github.com/PeanutButte7">Github</a>
           </li>
           <li class="nav-item">
             <router-link to="/about">About</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/contacts">Contact me</router-link>
           </li>
         </ul>
       </div>
@@ -66,9 +69,26 @@
       color: white;
     }
 
-    a:hover {
-      font-weight: 600;
-      text-decoration: none;
+    li {
+      margin-bottom: 0.5rem;
+
+      a {
+        position:relative;
+        text-decoration:none;
+        display:inline-block;
+      }
+      a:after {
+        display:block;
+        content: '';
+        border-bottom: solid 2px white;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+        transform-origin:100% 50%
+      }
+      a:hover:after {
+        transform: scaleX(1);
+        transform-origin:0 50%;
+      }
     }
 
     #sidebar {

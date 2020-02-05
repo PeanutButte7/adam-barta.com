@@ -43,20 +43,6 @@
                     <h4 class="mt-3">Girls T-Shirt</h4>
                 </b-col>
             </b-row>
-            <b-row id="designHeadline" class="mt-5">
-                <b-col>
-                    <h1 class="mt-5 mb-5">The Design Process</h1>
-                </b-col>
-            </b-row>
-            <b-row class="mt-5">
-                <b-col cols="12" md="6" class="ml-md-5">
-                    <h2>Inspiration</h2>
-                    <p>The most significant sponsor of GPFC is Gatorade. That's where a lot of inspiration came from. I have tried to take the main aspect of their logo  - lightning strike and incorporate it into the design.</p>
-                </b-col>
-                <b-col class="mr-md-5">
-                    <b-img :src="require('../../assets/GPFC/GatoradeLogo.svg')" fluid alt="GPFC Logo"/>
-                </b-col>
-            </b-row>
         </b-container>
     </div>
 </template>
@@ -99,12 +85,6 @@
     }
 
     #merchandise {
-        text-align: center;
-    }
-
-    #designHeadline {
-        background-color: #FF4500;
-        color: white;
         text-align: center;
     }
 

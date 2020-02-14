@@ -2,22 +2,24 @@
     <div id="portfolio">
         <div>
             <b-nav pills align="center" class="mt-4">
-                <b-nav-item class="my-nav-item" :active="activeTag === 'design'" @click="activeTag = 'design'">Design</b-nav-item>
+                <b-nav-item class="my-nav-item" :active="activeTag === 'design'" @click="activeTag = 'design'">Designs</b-nav-item>
                 <b-nav-item class="my-nav-item" :active="activeTag === 'all'" @click="activeTag = 'all'">All</b-nav-item>
                 <b-nav-item class="my-nav-item" :active="activeTag === 'program'" @click="activeTag = 'program'">Projects</b-nav-item>
             </b-nav>
         </div>
-        <b-container>
-            <ul class="row ml-5 mr-5 mt-2">
+        <b-container fluid class="pl-5 pr-5">
+            <ul class="row ml-5 mr-5 mt-2 mr-xl-0 ml-xl-0">
+                <transition-group appear name="list" tag="b-row">
                 <li class="col-6 p-4"
-                        is="SmallCard"
-                        v-for = "project in filteredProjects"
-                        :key = "project.id"
-                        :tags = "project.tags"
-                        :title = "project.title"
-                        :source = "project.source"
-                        :img-source = "project.imgSource"
-                ></li>
+                    is="SmallCard"
+                    v-for="project in filteredProjects"
+                    :key="project.id"
+                    :tags="project.tags"
+                    :title="project.title"
+                    :source="project.source"
+                    :img-source="project.imgSource"
+                />
+            </transition-group>
             </ul>
         </b-container>
         <h2 class="mt-5" id="github">Visit my <a target="_blank" href="https://github.com/PeanutButte7">Github</a> for more projects</h2>
@@ -26,6 +28,7 @@
 
 <script>
     import SmallCard from "../components/SmallCard";
+    import eng from "../locales/eng";
 
     export default {
         name: 'portfolio',
@@ -35,29 +38,7 @@
         data () {
             return {
                 activeTag: "all",
-                projects: [
-                    {
-                        id: 1,
-                        tags: ['program'],
-                        title: "My site",
-                        source: "/",
-                        imgSource: "SmallCard_GPFC"
-                    },
-                    {
-                        id: 2,
-                        tags: ['design'],
-                        title: "Logo Design for Parkour Prague",
-                        source: "/gpfc",
-                        imgSource: "SmallCard_GPFC"
-                    },
-                    {
-                        id: 3,
-                        tags: ['design'],
-                        title: "Brand Design for Czech Company",
-                        source: "/",
-                        imgSource: "SmallCard_3DDarky"
-                    },
-                ]
+                projects: eng.projects
             }
         },
         computed: {
@@ -74,6 +55,15 @@
 </script>
 
 <style lang="scss" scoped>
+    @import 'src/styles/main';
+
+    .list-enter-active, .list-leave-active {
+        transition: all 500ms ease-in-out;
+    }
+    .list-enter, .list-leave-to {
+        opacity: 0;
+    }
+
     #github {
         text-align: center;
 
@@ -106,12 +96,12 @@
     }
     .nav-pills a:hover:after {
         transform: scaleX(1);
-        transform-origin: 50% 0%;
+        transform-origin: 50% 0;
     }
 
     .nav-pills .nav-link.active {
         background-color: transparent;
-        color: #007bff;
+        color: $blue;
     }
 </style>
 

@@ -1,13 +1,25 @@
 {
-  "portfolio": {
-    "gpfc": {
-      "headlines": {
-        "about": "About the Brand",
-        ""
-      },
-      "content": {
-        "about": "GPFC - Gymnastic Parkour Freerun Club is a Czech company focused on making Parkour and Freerunning accessible to young people. The company had already established a small presence in the market but needed a more solid and polished design to grow."
-      }
+  "projects": [
+    {
+      "id": 1,
+      "tags": ["design"],
+      "title": "Website for Czech Travel Agency",
+      "source" : "www.ckpanter.cz",
+      "imgSource": "SmallCard_CKPanter"
+    },
+    {
+      "id": 2,
+      "tags": ["design"],
+      "title": "Logo Design for Parkour Prague",
+      "source": "/gpfc",
+      "imgSource": "SmallCard_GPFC"
+    },
+    {
+      "id": 3,
+      "tags": ["design"],
+      "title": "Brand Design for Czech Company",
+      "source": "/",
+      "imgSource": "SmallCard_3DDarky"
     }
-  }
+  ]
 }

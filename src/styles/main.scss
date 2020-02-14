@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap');
 
+// Change Bootstrap variables
+$blue: #3D6EFE;
+
+// Bootstrap and its default variables
+@import 'node_modules/bootstrap/scss/bootstrap';
+// BootstrapVue and its default variables
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
 html {
   background-color: black;
   font-size: 24px;

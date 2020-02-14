@@ -1,21 +1,25 @@
 <template>
     <div class="smallCard">
-        <router-link :to=this.source>
+        <b-card-group>
             <b-card
-                    :class="{ blur: isHovered }"
+                    class="col-5"
                     overlay
                     :img-src="require('@/assets/Portfolio/' + this.imgSource + '.png')"
                     img-alt="Card Image"
-                    align="center"
-                    title-variant="test"
-                    text-variant="dark"
-                    :title="isHovered ? title : ''"
-                    :sub-title="isHovered ? description : ''"
-                    @mouseover="isHovered = true" @mouseleave="isHovered = false"
             >
-                <b-button class="mt-4" v-if="isHovered" pill href="#" variant="primary">Go somewhere</b-button>
             </b-card>
-        </router-link>
+            <b-card
+                    class="text-right"
+                    footer-border-variant="light"
+                    text-variant="dark"
+                    :title="title"
+                    :sub-title="description"
+            >
+                <template class="bg-danger" v-slot:footer>
+                    <b-button class="align-self-end test" :to="source" variant="primary">View more</b-button>
+                </template>
+            </b-card>
+        </b-card-group>
     </div>
 </template>
 
@@ -47,21 +51,10 @@
         data () {
             return {
                 publicPath: process.env.BASE_URL,
-                isHovered: false,
             }
         }
     }
 </script>
 
 <style lang="scss" scoped>
-
-    .blur img {
-        -webkit-filter: blur(3px);
-        filter: blur(3px);
-        transition: 0.3s ease-out;
-    }
-
-    img {
-        transition: 0.3s ease-out;
-    }
 </style>

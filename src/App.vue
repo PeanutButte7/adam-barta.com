@@ -15,9 +15,6 @@
             <router-link to="/">Portfolio</router-link>
           </li>
           <li class="nav-item">
-            <a class="underline" target="_blank" href="https://github.com/PeanutButte7">Github</a>
-          </li>
-          <li class="nav-item">
             <router-link to="/about">About</router-link>
           </li>
           <li class="nav-item">

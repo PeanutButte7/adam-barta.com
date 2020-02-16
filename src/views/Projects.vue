@@ -1,10 +1,10 @@
 <template>
-    <div id="portfolio">
+    <div id="projects">
         <div>
             <b-nav pills align="center" class="mt-4">
                 <b-nav-item class="my-nav-item" :active="activeTag === 'design'" @click="activeTag = 'design'">Designs</b-nav-item>
                 <b-nav-item class="my-nav-item" :active="activeTag === 'all'" @click="activeTag = 'all'">All</b-nav-item>
-                <b-nav-item class="my-nav-item" :active="activeTag === 'program'" @click="activeTag = 'program'">Projects</b-nav-item>
+                <b-nav-item class="my-nav-item" :active="activeTag === 'website'" @click="activeTag = 'website'">Websites</b-nav-item>
             </b-nav>
         </div>
         <b-container fluid class="pl-5 pr-5">
@@ -16,13 +16,13 @@
                     :key="project.id"
                     :tags="project.tags"
                     :title="project.title"
-                    :source="project.source"
-                    :img-source="project.imgSource"
+                    :description="project.description"
+                    :links="project.links"
                 />
             </transition-group>
             </ul>
         </b-container>
-        <h2 class="mt-5" id="github">Visit my <a target="_blank" href="https://github.com/PeanutButte7">Github</a> for more projects</h2>
+        <h2 class="mt-5 mb-5" id="github">Visit my <a target="_blank" href="https://github.com/PeanutButte7">Github</a> for more projects</h2>
     </div>
 </template>
 
@@ -31,7 +31,7 @@
     import eng from "../locales/eng";
 
     export default {
-        name: 'portfolio',
+        name: 'projects',
         components: {
             SmallCard,
         },
@@ -55,7 +55,7 @@
 </script>
 
 <style lang="scss" scoped>
-    @import 'src/styles/main';
+    @import '../styles/main';
 
     .list-enter-active, .list-leave-active {
         transition: all 500ms ease-in-out;
@@ -69,7 +69,13 @@
 
         a {
             text-decoration:none;
-            transition: 250ms ease-in-out;
+            color: black;
+            -webkit-text-stroke: 0.5px white;
+        }
+
+        a:hover {
+            color: white;
+            -webkit-text-stroke: unset;
         }
     }
 
@@ -77,31 +83,34 @@
         padding: 0;
     }
 
-    .nav-pills a {
-        font-weight: 700;
+    .nav-pills {
+
+        a {
         color: white;
-        position:relative;
-        text-decoration:none;
-        display:inline-block;
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
         transition: 250ms ease-in-out;
-    }
+        }
 
-    .nav-pills a:after {
-        display:block;
-        content: '';
-        border-bottom: solid 2px white;
-        transform: scaleX(0);
-        transition: transform 250ms ease-in-out;
-        transform-origin:50% 100%
-    }
-    .nav-pills a:hover:after {
-        transform: scaleX(1);
-        transform-origin: 50% 0;
-    }
+        a:after {
+            display:block;
+            content: '';
+            border-bottom: solid 2px white;
+            transform: scaleX(0);
+            transition: transform 250ms ease-in-out;
+            transform-origin: 50% 100%
+        }
 
-    .nav-pills .nav-link.active {
-        background-color: transparent;
-        color: $blue;
+        a:hover:after {
+            transform: scaleX(1);
+            transform-origin: 50% 0;
+        }
+
+        .nav-link.active {
+            background-color: transparent;
+            font-weight: 700;
+        }
     }
 </style>
 

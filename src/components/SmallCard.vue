@@ -2,21 +2,28 @@
     <div class="smallCard">
         <b-card-group>
             <b-card
-                    class="col-5"
+                    class="col-5 p-0"
+                    border-variant="light"
                     overlay
-                    :img-src="require('@/assets/Portfolio/' + this.imgSource + '.png')"
+                    :img-src="require('@/assets/Portfolio/' + links.img)"
                     img-alt="Card Image"
             >
             </b-card>
             <b-card
                     class="text-right"
-                    footer-border-variant="light"
-                    text-variant="dark"
+                    footer-border-variant="dark"
+                    bg-variant="dark"
+                    border-variant="light"
+                    text-variant="light"
                     :title="title"
                     :sub-title="description"
             >
-                <template class="bg-danger" v-slot:footer>
-                    <b-button class="align-self-end test" :to="source" variant="primary">View more</b-button>
+                <template v-slot:footer>
+                    <b-button v-if="links.router != null" :to="links.router" variant="outline-light" size="sm">View more</b-button>
+                    <b-button v-else :href="links.external" target="_blank" variant="outline-light" size="sm">
+                        View more
+                        <b-icon-box-arrow-up-right/>
+                    </b-button>
                 </template>
             </b-card>
         </b-card-group>
@@ -26,22 +33,20 @@
 <script>
     export default {
         name: 'smallCard',
+        components: {
+        },
         props: {
             title: {
                 required: true,
                 type: String
             },
             description: {
-                required: false,
-                type: String
-            },
-            source: {
                 required: true,
                 type: String
             },
-            imgSource: {
+            links: {
                 required: true,
-                type: String
+                type: Object
             },
             tags: {
                 required: true,

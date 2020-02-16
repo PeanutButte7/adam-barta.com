@@ -12,24 +12,30 @@
 
         <ul class="nav flex-column mb-0">
           <li class="nav-item">
-            <router-link to="/">Portfolio</router-link>
+            <router-link to="/projects">Projects</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/about">About</router-link>
+            <router-link to="/skills">My skills</router-link>
           </li>
           <li class="nav-item">
             <router-link to="/contacts">Contact me</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/">About</router-link>
           </li>
         </ul>
       </div>
     </div>
     <div>
-      <router-view class="page-content"/>
+      <transition name="page" mode="out-in">
+        <router-view class="page-content"/>
+      </transition>
     </div>
   </div>
 </template>
 
 <script>
+
   export default {
     name: 'app',
     components: {
@@ -38,6 +44,18 @@
 </script>
 
 <style lang="scss">
+ .page-leave-active {
+   transition: all 50ms ease-in;
+    transform: translateY(3rem);
+  }
+
+  .page-enter-active {
+    transition: all 50ms ease-in;
+  }
+
+  .page-enter, .page-leave-to {
+    opacity: 0;
+  }
 
   .vertical-nav {
     min-width: 14.6rem;

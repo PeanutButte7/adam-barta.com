@@ -2,24 +2,79 @@
   "projects": [
     {
       "id": 1,
-      "tags": ["design"],
-      "title": "Website for Czech Travel Agency",
-      "source" : "www.ckpanter.cz",
-      "imgSource": "SmallCard_CKPanter"
+      "tags": ["website"],
+      "title": "CK Panter",
+      "description": "Wordpress website for a Czech travel agency",
+      "links": {
+        "external": "http://www.ckpanter.cz/",
+        "router": null,
+        "img": "SmallCard_CKPanter.png"
+      }
     },
     {
       "id": 2,
       "tags": ["design"],
-      "title": "Logo Design for Parkour Prague",
-      "source": "/gpfc",
-      "imgSource": "SmallCard_GPFC"
+      "title": "GPFC",
+      "description": "Logo design for a Prague parkour club",
+      "links": {
+        "external": null,
+        "router": "/gpfc",
+        "img": "SmallCard_GPFC.png"
+      }
     },
     {
       "id": 3,
       "tags": ["design"],
-      "title": "Brand Design for Czech Company",
-      "source": "/",
-      "imgSource": "SmallCard_3DDarky"
+      "title": "3D Dárky",
+      "description": "Brand design for a Czech 3D printing company",
+      "links": {
+        "external": "https://www.3d-darky.cz/",
+        "router": null,
+        "img": "SmallCard_3DDarky.png"
+      }
+    },
+    {
+      "id": 4,
+      "tags": ["design", "website"],
+      "title": "Adam Bárta",
+      "description": "My website and branding process",
+      "links": {
+        "external": null,
+        "router": "/",
+        "img": "SmallCard_AdamBarta.jpg"
+      }
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "title": "Javascript & Vue.js",
+      "subtitle": "Javascript is a essential language to know when making websites. Combined with complex component system such as Vue.js makes making large websites a breeze. It was even used to make this one!",
+      "button": false
+    },
+    {
+      "id": 2,
+      "title": "Bootstrap",
+      "subtitle": "Bootstrap helps me build better websites faster. It even integrates directly with Vue.js and is a tool that every developer should be familiar with.",
+      "button": false
+    },
+    {
+      "id": 3,
+      "title": "HTML & CSS / SCSS",
+      "subtitle": "When building a website these two languages are simply a must know. SCSS is also very handy as it introduces variables and lets me iterate quickly.",
+      "button": false
+    },
+    {
+      "id": 4,
+      "title": "Xcode & Swift",
+      "subtitle": "If you want to build an iOS app, knowing Swift and how to work in Xcode is necessary. My knowledge in this field isn't perfect but I'm capable of building simple apps.",
+      "button": false
+    },
+    {
+      "id": 5,
+      "title": "Unity & C#",
+      "subtitle": "As a videogame fan I like to try and make games on my own. It isn't easy and I haven't released any game yet but I sure have learned a lot along the way",
+      "button": false
     }
   ]
 }

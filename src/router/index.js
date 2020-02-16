@@ -1,16 +1,17 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import GPFC from '../views/projects/GPFC.vue'
-import Portfolio from '../views/Portfolio.vue'
-import Contacts from '../views/Contacts.vue'
-import About from '../views/About.vue'
+import GPFC from '@/views/projects/GPFC.vue'
+import Portfolio from '@/views/Projects.vue'
+import Contacts from '@/views/Contacts.vue'
+import About from '@/views/About.vue'
+import Skills from "@/views/Skills";
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'portfolio',
+    path: '/projects',
+    name: 'projects',
     component: Portfolio
   },
   {
@@ -19,9 +20,14 @@ const routes = [
     component: Contacts
   },
   {
-    path: '/about',
+    path: '/',
     name: 'about',
     component: About
+  },
+  {
+    path: '/skills',
+    name: 'skills',
+    component: Skills
   },
   {
     path: '/gpfc',

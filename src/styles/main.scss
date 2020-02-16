@@ -2,11 +2,16 @@
 
 // Change Bootstrap variables
 $blue: #3D6EFE;
+$dark: black;
 
 // Bootstrap and its default variables
-@import 'node_modules/bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 // BootstrapVue and its default variables
-@import 'node_modules/bootstrap-vue/src/index.scss';
+@import "~bootstrap-vue/src/index.scss";
+
+::-webkit-scrollbar {
+  display: none;
+}
 
 html {
   background-color: black;
@@ -14,7 +19,7 @@ html {
   text-align: left;
 }
 
-h1 {
+h1, .h1 {
   font-size: 4rem;
   font-weight: 600;
 }

@@ -9,8 +9,9 @@
                             is="Skill"
                             v-for="skill in skills"
                             :key="skill.id"
+                            :id="skill.id.toString()"
                             :title="skill.title"
-                            :subtitle="skill.subtitle"
+                            :skillItems="skill.skillItems"
                             :button="skill.button"
                         />
                     </ul>

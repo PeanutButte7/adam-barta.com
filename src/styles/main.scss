@@ -3,6 +3,13 @@
 // Change Bootstrap variables
 $blue: #3D6EFE;
 $dark: black;
+$grid-breakpoints: (
+        xs: 0,
+        sm: 456px,
+        md: 789px,
+        lg: 999px,
+        xl: 1441px
+);
 
 // Bootstrap and its default variables
 @import "~bootstrap/scss/bootstrap";

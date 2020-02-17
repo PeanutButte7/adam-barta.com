@@ -45,12 +45,12 @@
 
 <style lang="scss">
  .page-leave-active {
-   transition: all 50ms ease-in;
+   transition: all ease-out;
     transform: translateY(3rem);
   }
 
   .page-enter-active {
-    transition: all 50ms ease-in;
+    transition: all ease-in;
   }
 
   .page-enter, .page-leave-to {

@@ -7,10 +7,9 @@
                 <b-nav-item class="my-nav-item" :active="activeTag === 'website'" @click="activeTag = 'website'">Websites</b-nav-item>
             </b-nav>
         </div>
-        <b-container fluid class="pl-5 pr-5">
-            <ul class="row ml-5 mr-5 mt-2 mr-xl-0 ml-xl-0">
-                <transition-group appear name="list" tag="b-row">
-                <li class="col-6 p-4"
+        <b-container fluid class="pl-lg-5 pr-lg-5 pl-4 pr-4">
+            <ul class="row ml-lg-2 mr-lg-2 mt-2 mr-0 ml-0 justify-content-center">
+                <li class="col-xl-6 col-lg-10 col-12 p-lg-4 pl-0 pr-0 pt-4 pb-4"
                     is="SmallCard"
                     v-for="project in filteredProjects"
                     :key="project.id"
@@ -19,7 +18,6 @@
                     :description="project.description"
                     :links="project.links"
                 />
-            </transition-group>
             </ul>
         </b-container>
         <h2 class="mt-5 mb-5" id="github">Visit my <a target="_blank" href="https://github.com/PeanutButte7">Github</a> for more projects</h2>
@@ -56,13 +54,6 @@
 
 <style lang="scss" scoped>
     @import '../styles/main';
-
-    .list-enter-active, .list-leave-active {
-        transition: all 500ms ease-in-out;
-    }
-    .list-enter, .list-leave-to {
-        opacity: 0;
-    }
 
     #github {
         text-align: center;

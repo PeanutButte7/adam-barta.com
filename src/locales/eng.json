@@ -18,7 +18,7 @@
       "description": "Logo design for a Prague parkour club",
       "links": {
         "external": null,
-        "router": "/gpfc",
+        "router": null,
         "img": "SmallCard_GPFC.png"
       }
     },
@@ -40,7 +40,7 @@
       "description": "My website and branding process",
       "links": {
         "external": null,
-        "router": "/",
+        "router": null,
         "img": "SmallCard_AdamBarta.jpg"
       }
     }
@@ -48,31 +48,27 @@
   "skills": [
     {
       "id": 1,
-      "title": "Javascript & Vue.js",
-      "subtitle": "Javascript is a essential language to know when making websites. Combined with complex component system such as Vue.js makes making large websites a breeze. It was even used to make this one!",
+      "title": "Web development",
+      "skillItems": ["Javascript & Vue", "Bootstrap", "HTML & CSS / SCSS"],
       "button": false
     },
     {
       "id": 2,
-      "title": "Bootstrap",
-      "subtitle": "Bootstrap helps me build better websites faster. It even integrates directly with Vue.js and is a tool that every developer should be familiar with.",
+      "title": "Design",
+      "skillItems": ["Logo design", "Brand identity design", "Vector illustrations"],
       "button": false
     },
     {
       "id": 3,
-      "title": "HTML & CSS / SCSS",
-      "subtitle": "When building a website these two languages are simply a must know. SCSS is also very handy as it introduces variables and lets me iterate quickly.",
+      "title": "Copy writing",
+      "skillItems": null,
+      "subtitle": "As a videogame fan I like to try and make games on my own. It isn't easy and I haven't released any game yet but I sure have learned a lot along the way",
       "button": false
     },
     {
       "id": 4,
-      "title": "Xcode & Swift",
-      "subtitle": "If you want to build an iOS app, knowing Swift and how to work in Xcode is necessary. My knowledge in this field isn't perfect but I'm capable of building simple apps.",
-      "button": false
-    },
-    {
-      "id": 5,
-      "title": "Unity & C#",
+      "title": "Video production",
+      "skillItems": null,
       "subtitle": "As a videogame fan I like to try and make games on my own. It isn't easy and I haven't released any game yet but I sure have learned a lot along the way",
       "button": false
     }

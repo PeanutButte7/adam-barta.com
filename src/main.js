@@ -3,14 +3,20 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faLinkedin, faTwitterSquare, faFacebookSquare} from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'bootstrap-vue/dist/bootstrap-vue-icons.min.css'
 import './styles/main.scss'
 
+library.add(faLinkedin, faTwitterSquare, faFacebookSquare);
+
 Vue.use(BootstrapVue);
 Vue.use(BootstrapVueIcons);
+Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 Vue.config.productionTip = false;
 

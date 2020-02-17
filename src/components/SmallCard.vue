@@ -2,7 +2,7 @@
     <div class="smallCard">
         <b-card-group>
             <b-card
-                    class="col-5 p-0"
+                    class="col-lg-5 col-12 p-0 m-0"
                     border-variant="light"
                     overlay
                     :img-src="require('@/assets/Portfolio/' + links.img)"
@@ -10,7 +10,7 @@
             >
             </b-card>
             <b-card
-                    class="text-right"
+                    class="text-right bottom-card"
                     footer-border-variant="dark"
                     bg-variant="dark"
                     border-variant="light"
@@ -18,7 +18,7 @@
                     :title="title"
                     :sub-title="description"
             >
-                <template v-slot:footer>
+                <template v-if="links.router || links.external !== null" v-slot:footer>
                     <b-button v-if="links.router != null" :to="links.router" variant="outline-light" size="sm">View more</b-button>
                     <b-button v-else :href="links.external" target="_blank" variant="outline-light" size="sm">
                         View more
@@ -62,4 +62,7 @@
 </script>
 
 <style lang="scss" scoped>
+    .bottom-card {
+        margin-top: -0.4rem;
+    }
 </style>

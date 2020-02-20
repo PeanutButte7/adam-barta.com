@@ -64,10 +64,6 @@
 <style lang="scss" scoped>
     @import "../styles/main";
 
-    @media (max-width: $xl) {
-        .bottom-card {
-        }
-    }
 
     @media (max-width: $sm) {
         .bottom-card {

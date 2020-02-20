@@ -10,6 +10,11 @@ $grid-breakpoints: (
         lg: 999px,
         xl: 1441px
 );
+$xs: 0px;
+$sm: 456px;
+$md: 789px;
+$lg: 999px;
+$xl: 1441px;
 
 // Bootstrap and its default variables
 @import "~bootstrap/scss/bootstrap";

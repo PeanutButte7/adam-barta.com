@@ -26,7 +26,26 @@
         </ul>
       </div>
     </div>
-    <div>
+    <div class="mobile-menu">
+      <b-icon-justify-right class="h2 mt-2 mr-2 mb-0" @click="menuActive = !menuActive"/>
+      <div v-if="menuActive" class="mobile-menu-content">
+        <ul class="nav flex-column mb-0">
+          <li class="nav-item">
+            <router-link to="/projects" @click.native="menuActive = false">Projects</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/skills" @click.native="menuActive = false">My skills</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/contacts" @click.native="menuActive = false">Contact me</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/" @click.native="menuActive = false">About</router-link>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div v-if="!menuActive">
       <transition name="page" mode="out-in">
         <router-view class="page-content"/>
       </transition>
@@ -35,15 +54,36 @@
 </template>
 
 <script>
-
   export default {
     name: 'app',
     components: {
-    }
+    },
+    data() {
+      return {
+        menuActive: false
+      }
+    },
   }
 </script>
 
 <style lang="scss">
+  @import 'styles/main.scss';
+
+  .mobile-menu {
+    display: block;
+    text-align: right;
+
+    .mobile-menu-content {
+      text-align: center;
+    }
+  }
+
+  @media (min-width: $lg) {
+    .mobile-menu {
+      display: none;
+    }
+  }
+
  .page-leave-active {
    transition: all ease-out;
     transform: translateY(3rem);

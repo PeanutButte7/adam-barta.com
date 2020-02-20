@@ -1,11 +1,11 @@
 <template>
     <div id="skill">
         <b-card no-body class="mb-1 bg-dark">
-            <b-card-header class="">
+            <b-card-header class="pr-0 pl-0">
                 <span class="h4"> {{ title }} </span>
                 <b-button
                     v-if="skillItems !== null"
-                    class="ml-3 mb-2"
+                    class="card-button ml-xl-3 ml-lg-3 ml-sm-0 mb-xl-2 mb-lg-2 mb-sm-0 mt-1"
                     size="sm"
                     variant="outline-light"
                     :aria-expanded="visible"
@@ -16,7 +16,7 @@
             </b-card-header>
             <b-collapse :id="id" v-model="visible">
                 <b-card-body class="pt-2">
-                    <ul class="list-unstyled ml-4">
+                    <ul class="list-unstyled ml-xl-4 ml-lg-4 ml-sm-0">
                         <li v-for="item in skillItems" :key="item.id">
                             <p><span class="mr-2"> / </span>{{ item }}</p>
                         </li>
@@ -63,4 +63,15 @@
 </script>
 
 <style lang="scss" scoped>
+    @import "../styles/main";
+
+    @media (max-width: $sm) {
+        .h4 {
+            font-size: 0.9rem;
+        }
+
+        .card-button {
+            display: block;
+        }
+    }
 </style>

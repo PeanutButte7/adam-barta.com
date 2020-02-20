@@ -62,7 +62,16 @@
 </script>
 
 <style lang="scss" scoped>
-    .bottom-card {
-        margin-top: -0.4rem;
+    @import "../styles/main";
+
+    @media (max-width: $xl) {
+        .bottom-card {
+        }
+    }
+
+    @media (max-width: $sm) {
+        .bottom-card {
+            margin-top: -0.4rem;
+        }
     }
 </style>

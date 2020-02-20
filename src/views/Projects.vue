@@ -1,7 +1,7 @@
 <template>
     <div id="projects">
         <div>
-            <b-nav pills align="center" class="mt-4">
+            <b-nav pills align="center" class="mt-xl-4 mt-lg-4 mt-1">
                 <b-nav-item class="my-nav-item" :active="activeTag === 'design'" @click="activeTag = 'design'">Designs</b-nav-item>
                 <b-nav-item class="my-nav-item" :active="activeTag === 'all'" @click="activeTag = 'all'">All</b-nav-item>
                 <b-nav-item class="my-nav-item" :active="activeTag === 'website'" @click="activeTag = 'website'">Websites</b-nav-item>
@@ -53,7 +53,7 @@
 </script>
 
 <style lang="scss" scoped>
-    @import '../styles/main';
+    @import "../styles/main";
 
     #github {
         text-align: center;
@@ -67,6 +67,27 @@
         a:hover {
             color: white;
             -webkit-text-stroke: unset;
+        }
+    }
+
+    @media (max-width: $sm) {
+        h2 {
+            font-size: 1.5rem ;
+        }
+
+        .my-nav-item {
+            font-size: 0.9rem;
+        }
+
+        #github a {
+            display: block;
+            font-size: 3rem;
+        }
+    }
+
+    @media (max-width: 320px) {
+        .my-nav-item {
+            font-size: 0.7rem;
         }
     }
 

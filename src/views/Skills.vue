@@ -1,9 +1,8 @@
 <template>
     <div id="skills">
-        <b-container fluid class="pt-5 pl-5 pr-5">
-            <b-col cols="8">
-                <h2>My skills</h2>
-                <div class="mt-5">
+        <b-container fluid class="pt-lg-5 pl-lg-5 pr-lg-5">
+            <b-col cols="12" lg="8" xl="8">
+                <div class="mt-lg-5 mt-xl-5 mt-3">
                     <ul class="p-0">
                         <li
                             is="Skill"

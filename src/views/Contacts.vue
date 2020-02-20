@@ -26,6 +26,8 @@
 </script>
 
 <style scoped lang="scss">
+    @import "../styles/main";
+
     #contacts, .container, .row{
         text-align: center;
         height: 100vh;
@@ -46,5 +48,29 @@
 
     .icon:hover {
         color: lightgrey;
+    }
+
+    @media (max-width: $sm) {
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-size: 1rem;
+
+        }
+    }
+
+    @media (max-width: 320px) {
+        h3 {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-size: 0.8rem;
+
+        }
     }
 </style>

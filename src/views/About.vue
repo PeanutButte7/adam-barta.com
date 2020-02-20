@@ -18,8 +18,8 @@
                         <b-button block to="/contacts" variant="outline-light" size="sm">Contact me</b-button>
                     </div>
                     <div class="mt-3">
-                        <p>Hi! I'm a highschool student studying web development, programming and vector art. I have also been working as writer, video producer and game critic in Czech magazine IndianTVCZ for 3 years now.</p>
-                        <p>Although I'm a student I spend a lot of free time working on my own projects. Such as websites, videogames, hardware projects and more. I also make digital art - mainly vector illustrations and logos or UI/UX concepts.</p>
+                        <p>Hi! I'm a highschool student studying web development, programming and vector art. I have also been working as writer, video producer and game critic in Czech magazine <a class="link" target="_blank" href="https://indian-tv.cz/">IndianTVCZ</a> for 3 years now.</p>
+                        <p>In parallel with my studies I also work on my own projects. Such as websites, videogames, hardware projects and more. I also make digital art - mainly vector illustrations and logos or UI/UX concepts.</p>
                     </div>
                     <div class="desktop-buttons">
                         <b-button class="mt-3" to="/skills" variant="outline-light">See my skills</b-button>
@@ -43,6 +43,16 @@
 
 <style lang="scss" scoped>
     @import "../styles/main";
+
+    .link {
+        color: white;
+        border-bottom: solid 2px white;
+    }
+
+    .link:hover {
+        color: white;
+        text-decoration: none;
+    }
 
     .mobile-buttons {
         display: none;

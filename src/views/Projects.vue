@@ -14,9 +14,12 @@
                             @dismissed="countDownTime = 0, switching = false, activeTag = newTag"
                             :show="countDownTime"
                             variant="dark"
-                            class="bg-dark text-secondary border-0 m-0 p-0"
+                            class="bg-dark text-secondary border-0 mt-3 p-0"
                     >
-                        <h2 class="text-center">Filtering by <br> {{ newTag }}</h2>
+                        <div class="text-center">
+                            <h2>Filtering by <br> {{ newTag }}...</h2>
+                            <b-spinner type="grow" variant="secondary" style="width: 3rem; height: 3rem;" label="Loading" class="mt-3"/>
+                        </div>
                     </b-alert>
                 </b-nav>
             </b-container>
@@ -120,7 +123,7 @@
     }
 
     .fade-enter-active, .fade-leave-active {
-        transition: opacity 0.5s;
+        transition: opacity 1s;
     }
     .fade-enter, .fade-leave-to {
         opacity: 0;

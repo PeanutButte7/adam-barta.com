@@ -96,7 +96,7 @@
   .menu-enter, .menu-leave-to {
     opacity: 0;
   }
-  // --Transitions
+  // ---Transitions---
 
   .mobile-menu {
     display: block;
@@ -175,6 +175,10 @@
       a:hover:after {
         transform: scaleX(1);
         transform-origin:0 50%;
+      }
+
+      a.router-link-exact-active {
+        font-weight: 600;
       }
     }
 

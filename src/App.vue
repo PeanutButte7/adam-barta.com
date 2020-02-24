@@ -191,7 +191,19 @@
     color: white;
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: $md) {
+    #nav {
+      display: none;
+    }
+
+    .page-content {
+      width: 100%;
+      margin-left: 0;
+      transition: all 0.4s;
+    }
+  }
+
+  @media (max-height: 450px) {
     #nav {
       display: none;
     }

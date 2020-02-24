@@ -12,16 +12,16 @@
 
         <ul class="nav flex-column mb-0">
           <li class="nav-item">
-            <router-link to="/projects">Projects</router-link>
+            <router-link to="projects">Projects</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/skills">My skills</router-link>
+            <router-link to="skills">My skills</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/contacts">Contact me</router-link>
+            <router-link to="contacts">Contact me</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/">About</router-link>
+            <router-link to="about">About</router-link>
           </li>
         </ul>
       </div>

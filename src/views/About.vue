@@ -22,9 +22,9 @@
                         <p> Although I'm a student I spend a lot of free time working on my own projects. Such as websites, videogames, hardware projects and more. I also make digital art - mainly vector illustrations and logos or UI/UX concepts.</p>
                     </div>
                     <div class="desktop-buttons">
-                        <b-button class="mt-3" to="/skills" variant="outline-light">See my skills</b-button>
-                        <b-button class="mt-3 ml-3" to="/projects" variant="outline-light">See my projects</b-button>
-                        <b-button class="mt-3 ml-3" to="/contacts" variant="outline-light">Contact me</b-button>
+                        <b-button class="mt-3" to="skills" variant="outline-light">See my skills</b-button>
+                        <b-button class="mt-3 ml-3" to="projects" variant="outline-light">See my projects</b-button>
+                        <b-button class="mt-3 ml-3" to="contacts" variant="outline-light">Contact me</b-button>
                     </div>
 <!--                    <b-button class="mt-3 ml-3" to="/timeline" variant="outline-light">See where I've worked</b-button>-->
                 </b-col>

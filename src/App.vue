@@ -21,7 +21,7 @@
             <router-link to="contacts">Contact me</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="about">About</router-link>
+            <router-link to="/">About</router-link>
           </li>
         </ul>
       </div>

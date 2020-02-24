@@ -4,7 +4,7 @@
       "id": 1,
       "tags": ["website"],
       "title": "CK Panter",
-      "description": "Wordpress website for a Czech travel agency",
+      "description": "Wordpress website for a travel agency",
       "links": {
         "external": "http://www.ckpanter.cz/",
         "router": null,
@@ -26,7 +26,7 @@
       "id": 3,
       "tags": ["design"],
       "title": "3D Dárky",
-      "description": "Brand design for a Czech company",
+      "description": "Brand design for a student company",
       "links": {
         "external": "https://www.3d-darky.cz/",
         "router": null,

@@ -17,7 +17,7 @@
                             class="bg-dark text-secondary border-0 mt-3 p-0"
                     >
                         <div class="text-center">
-                            <h2>Filtering by <br> {{ newTag }}...</h2>
+                            <h2>Filtering results...</h2>
                             <b-spinner type="grow" variant="secondary" style="width: 3rem; height: 3rem;" label="Loading" class="mt-3"/>
                         </div>
                     </b-alert>

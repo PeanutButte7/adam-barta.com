@@ -64,6 +64,9 @@
 <style lang="scss" scoped>
     @import "../styles/main";
 
+    .card-body {
+        padding-bottom: 0;
+    }
 
     @media (max-width: $sm) {
         .bottom-card {

@@ -2,25 +2,39 @@
     <div id="projects">
         <div>
             <b-nav pills align="center" class="mt-xl-4 mt-lg-4 mt-1">
-                <b-nav-item class="my-nav-item" :active="activeTag === 'design'" @click="activeTag = 'design'">Designs</b-nav-item>
-                <b-nav-item class="my-nav-item" :active="activeTag === 'all'" @click="activeTag = 'all'">All</b-nav-item>
-                <b-nav-item class="my-nav-item" :active="activeTag === 'website'" @click="activeTag = 'website'">Websites</b-nav-item>
+                <b-nav-item class="my-nav-item" :active="activeTag === 'design'" @click="changeActiveTag('design')">Designs</b-nav-item>
+                <b-nav-item class="my-nav-item" :active="activeTag === 'all'" @click="changeActiveTag('all')">All</b-nav-item>
+                <b-nav-item class="my-nav-item" :active="activeTag === 'website'" @click="changeActiveTag('website')">Websites</b-nav-item>
             </b-nav>
         </div>
-        <b-container fluid class="pl-lg-5 pr-lg-5 pl-4 pr-4">
-            <ul class="row ml-lg-2 mr-lg-2 mt-2 mr-0 ml-0 justify-content-center">
-                <li class="col-xl-6 col-lg-10 col-12 p-lg-4 pl-0 pr-0 pt-4 pb-4"
-                    is="SmallCard"
-                    v-for="project in filteredProjects"
-                    :key="project.id"
-                    :tags="project.tags"
-                    :title="project.title"
-                    :description="project.description"
-                    :links="project.links"
-                />
-            </ul>
-        </b-container>
-        <h2 class="mt-5 mb-5" id="github">Visit my <a target="_blank" href="https://github.com/PeanutButte7">Github</a> for more projects</h2>
+        <transition-group name="fade" mode="out-in">
+            <b-container key="switchAlert" v-show="switching" fluid class="pl-lg-5 pr-lg-5 pl-4 pr-4">
+                <b-nav pills align="center">
+                    <b-alert
+                            @dismissed="countDownTime = 0, switching = false, activeTag = newTag"
+                            :show="countDownTime"
+                            variant="dark"
+                            class="bg-dark text-secondary border-0 m-0 p-0"
+                    >
+                        <h2 class="text-center">Filtering by <br> {{ newTag }}</h2>
+                    </b-alert>
+                </b-nav>
+            </b-container>
+            <b-container key="content" v-show="!switching" fluid class="pl-lg-5 pr-lg-5 pl-4 pr-4">
+                <ul class="row ml-lg-2 mr-lg-2 mt-0 mr-0 ml-0 justify-content-center">
+                    <li class="col-xl-6 col-lg-10 col-12 p-lg-4 pl-0 pr-0 pt-4 pb-4"
+                        is="SmallCard"
+                        v-for="project in filteredProjects"
+                        :key="project.id"
+                        :tags="project.tags"
+                        :title="project.title"
+                        :description="project.description"
+                        :links="project.links"
+                    />
+                </ul>
+                <h2 class="mt-5 mb-5" id="github">Visit my <a target="_blank" href="https://github.com/PeanutButte7">Github</a> for more projects</h2>
+            </b-container>
+        </transition-group>
     </div>
 </template>
 
@@ -36,6 +50,9 @@
         data () {
             return {
                 activeTag: "all",
+                newTag: "",
+                countDownTime: 0,
+                switching: false,
                 projects: eng.projects
             }
         },
@@ -47,6 +64,17 @@
                     }
                     return project.tags.includes(this.activeTag);
                 });
+            }
+        },
+        methods: {
+            changeActiveTag(newTag) {
+                if (newTag === this.activeTag) {
+                    return;
+                }
+
+                this.newTag = newTag;
+                this.switching = true;
+                this.countDownTime = 2;
             }
         }
     }
@@ -89,6 +117,13 @@
         .my-nav-item {
             font-size: 0.7rem;
         }
+    }
+
+    .fade-enter-active, .fade-leave-active {
+        transition: opacity 0.5s;
+    }
+    .fade-enter, .fade-leave-to {
+        opacity: 0;
     }
 
     ul {

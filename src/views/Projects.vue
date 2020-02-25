@@ -77,7 +77,7 @@
 
                 this.newTag = newTag;
                 this.switching = true;
-                this.countDownTime = 2;
+                this.countDownTime = 1;
             }
         }
     }

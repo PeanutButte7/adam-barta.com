@@ -30,7 +30,7 @@
 
     #contacts, .container, .row{
         text-align: center;
-        height: 100vh;
+        height: 80vh;
     }
 
     h2 {

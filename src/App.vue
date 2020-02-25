@@ -28,10 +28,15 @@
     </div>
     <div class="mobile-menu">
       <transition name="menu" mode="out-in">
-      <b-icon-justify-right v-if="!menuActive" @click="menuActive = true" class="h2 mt-2 mr-2 mb-0"/>
-      <b-container v-if="menuActive" class="mobile-menu-content">
-        <b-row align-v="center">
-          <b-col>
+        <b-icon-justify-right v-if="!menuActive" @click="menuActive = true" class="h2 mt-2 mr-2 mb-0"/>
+        <b-container v-if="menuActive" class="mobile-menu-content">
+          <b-row>
+            <b-col>
+              <b-icon-x @click="menuActive = false" class="h2 mt-2 mb-0 float-right"/>
+            </b-col>
+          </b-row>
+          <b-row id="content-row" align-v="center">
+            <b-col>
               <ul class="nav flex-column mb-0">
                 <li class="nav-item">
                   <router-link to="/projects" @click.native="menuActive = false">Projects</router-link>
@@ -46,9 +51,9 @@
                   <router-link to="/" @click.native="menuActive = false">About</router-link>
                 </li>
               </ul>
-          </b-col>
-        </b-row>
-      </b-container>
+            </b-col>
+          </b-row>
+        </b-container>
       </transition>
     </div>
     <div>
@@ -116,9 +121,9 @@
         font-weight: 600;
       }
 
-      .row{
+      #content-row{
         text-align: center;
-        height: 100vh;
+        height: 80vh;
       }
     }
   }

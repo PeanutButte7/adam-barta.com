@@ -62,6 +62,12 @@
         }
     }
 
+    @media (max-width: 768px) {
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+
     @media (max-width: 320px) {
         h3 {
             font-size: 1rem;

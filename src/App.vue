@@ -196,9 +196,13 @@
     color: white;
   }
 
-  @media (max-width: $md) {
+  @media (max-width: 1024px) { // Ipad
     #nav {
       display: none;
+    }
+
+    .mobile-menu {
+      display: block;
     }
 
     .page-content {

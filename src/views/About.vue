@@ -19,7 +19,7 @@
                     </div>
                     <div class="mt-3">
                         <p>Hi! I'm a highschool student studying web development, programming and vector art. I have also been working as writer, video producer and game critic in Czech magazine <a class="link" target="_blank" href="https://indian-tv.cz/">IndianTVCZ</a> for 3 years now.</p>
-                        <p> Although I'm a student I spend a lot of free time working on my own projects. Such as websites, videogames, hardware projects and more. I also make digital art - mainly vector illustrations and logos or UI/UX concepts.</p>
+                        <p> Although I'm a student I spend a lot of free time working on my own projects. Such as websites, videogames, hardware projects and more. <br/> I also make UI / UX concepts, logos and vector illustrations.</p>
                     </div>
                     <div class="desktop-buttons">
                         <b-button class="mt-3" to="skills" variant="outline-light">See my skills</b-button>

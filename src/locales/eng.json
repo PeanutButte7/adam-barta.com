@@ -43,6 +43,28 @@
         "router": null,
         "img": "SmallCard_AdamBarta.jpg"
       }
+    },
+    {
+      "id": 5,
+      "tags": ["game"],
+      "title": "Dynamite Crush",
+      "description": "Small puzzle game made in a week",
+      "links": {
+        "external": "https://peanutbutte7.itch.io/dynamitecrush",
+        "router": null,
+        "img": "SmallCard_DynamiteCrush.png"
+      }
+    },
+    {
+      "id": 6,
+      "tags": ["game"],
+      "title": "Backpacked",
+      "description": "Top-down shooter made in 48 hours",
+      "links": {
+        "external": "https://peanutbutte7.itch.io/dynamitecrush",
+        "router": null,
+        "img": "SmallCard_Backpacked.png"
+      }
     }
   ],
   "skills": [
@@ -55,7 +77,7 @@
     {
       "id": 2,
       "title": "Design",
-      "skillItems": ["Logo design", "Brand identity design", "Vector illustrations"],
+      "skillItems": ["UI & UX design", "Brand identity design", "Logo design", "Vector illustrations"],
       "button": false
     },
     {

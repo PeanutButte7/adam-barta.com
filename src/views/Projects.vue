@@ -2,9 +2,10 @@
     <div id="projects">
         <div>
             <b-nav pills align="center" class="mt-xl-4 mt-lg-4 mt-1">
-                <b-nav-item class="my-nav-item" :active="activeTag === 'design'" @click="changeActiveTag('design')">Designs</b-nav-item>
                 <b-nav-item class="my-nav-item" :active="activeTag === 'all'" @click="changeActiveTag('all')">All</b-nav-item>
+                <b-nav-item class="my-nav-item" :active="activeTag === 'design'" @click="changeActiveTag('design')">Designs</b-nav-item>
                 <b-nav-item class="my-nav-item" :active="activeTag === 'website'" @click="changeActiveTag('website')">Websites</b-nav-item>
+                <b-nav-item class="my-nav-item" :active="activeTag === 'game'" @click="changeActiveTag('game')">Games</b-nav-item>
             </b-nav>
         </div>
         <transition-group name="fade" mode="out-in">

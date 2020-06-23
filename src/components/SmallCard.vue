@@ -68,6 +68,16 @@
         padding-bottom: 0;
     }
 
+    @media (min-width: 2000px) {
+        .card-title {
+            font-size: 2rem;
+        }
+
+        .card-subtitle {
+            font-size: 1.3rem;
+        }
+    }
+
     @media (max-width: $sm) {
         .bottom-card {
             margin-top: -0.4rem;

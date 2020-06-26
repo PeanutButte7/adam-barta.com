@@ -13,7 +13,7 @@
     },
     {
       "id": 2,
-      "tags": ["design, website"],
+      "tags": ["design", "website"],
       "title": "CK Panter",
       "description": "Wordpress website for a travel agency",
       "links": {
@@ -28,7 +28,7 @@
       "title": "GPFC",
       "description": "Logo design for a Prague parkour club",
       "links": {
-        "external": null,
+        "external": "https://parkourpraha.cz/",
         "router": null,
         "img": "SmallCard_GPFC.png"
       }

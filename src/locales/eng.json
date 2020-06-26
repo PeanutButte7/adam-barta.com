@@ -2,7 +2,18 @@
   "projects": [
     {
       "id": 1,
-      "tags": ["website"],
+      "tags": ["design"],
+      "title": "Private Debt Deals",
+      "description": "Design for a website focused on listing Private Debt Deals",
+      "links": {
+        "external": null,
+        "router": null,
+        "img": "SmallCard_PDD.png"
+      }
+    },
+    {
+      "id": 2,
+      "tags": ["design, website"],
       "title": "CK Panter",
       "description": "Wordpress website for a travel agency",
       "links": {
@@ -12,7 +23,7 @@
       }
     },
     {
-      "id": 2,
+      "id": 3,
       "tags": ["design"],
       "title": "GPFC",
       "description": "Logo design for a Prague parkour club",
@@ -23,7 +34,7 @@
       }
     },
     {
-      "id": 3,
+      "id": 4,
       "tags": ["design"],
       "title": "3D Dárky",
       "description": "Brand design for a student company",
@@ -34,7 +45,7 @@
       }
     },
     {
-      "id": 4,
+      "id": 5,
       "tags": ["design", "website"],
       "title": "Adam Bárta",
       "description": "My website and branding process",
@@ -45,7 +56,7 @@
       }
     },
     {
-      "id": 5,
+      "id": 6,
       "tags": ["game"],
       "title": "Dynamite Crush",
       "description": "Small puzzle game made in a week",
@@ -56,7 +67,7 @@
       }
     },
     {
-      "id": 6,
+      "id": 7,
       "tags": ["game"],
       "title": "Backpacked",
       "description": "Top-down shooter made in 48 hours",

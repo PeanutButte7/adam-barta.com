@@ -1,120 +1,90 @@
 {
   "projects": [
     {
-      "id": 1,
-      "tags": ["design"],
-      "title": "Site Concept",
-      "description": "A design concept for a Fiverr like website",
-      "links": {
-        "external": "https://www.figma.com/proto/O8VPbgL50THd26MiT1kb37/Untitled-design?node-id=3%3A3&viewport=425%2C-301%2C0.6981985569000244&scaling=contain",
-        "router": null,
-        "img": "SmallCard_Homepage.png"
-      }
+      "header": "PDD",
+      "description": "Design for a website focused on listing private debt deals.",
+      "image": "PDD",
+      "links": [
+        {
+          "url": "https://www.figma.com/proto/Ta1ejIKvJtRmbJMkddEEZQ/Financial-Database-Website?node-id=37%3A558&viewport=-8619%2C-968%2C1.0013110637664795&scaling=contain",
+          "type": "Figma",
+          "text": "See the design on Figma"
+        }
+      ]
     },
     {
-      "id": 0,
-      "tags": ["design"],
-      "title": "Private Debt Deals",
-      "description": "Design for a website focused on listing Private Debt Deals",
-      "links": {
-        "external": "https://www.figma.com/proto/Ta1ejIKvJtRmbJMkddEEZQ/Financial-Database-Website?node-id=37%3A558&viewport=-8619%2C-968%2C1.0013110637664795&scaling=contain",
-        "router": null,
-        "img": "SmallCard_PDD.png"
-      }
+      "header": "Site Concept",
+      "description": "A design concept for a Fiverr like website with Dashboards and Registration pages.",
+      "image": "SiteConcept",
+      "links": [
+        {
+          "url": "https://www.figma.com/proto/O8VPbgL50THd26MiT1kb37/Untitled-design?node-id=3%3A3&viewport=425%2C-301%2C0.6981985569000244&scaling=contain",
+          "type": "Figma",
+          "text": "See the design on Figma"
+        }
+      ]
     },
     {
-      "id": 1,
-      "tags": ["design", "website"],
-      "title": "CK Panter",
-      "description": "Wordpress website for a travel agency",
-      "links": {
-        "external": "http://www.ckpanter.cz/",
-        "router": null,
-        "img": "SmallCard_CKPanter.png"
-      }
+      "header": "GPFC",
+      "description": "Logo design for a fast-growing parkour club.",
+      "image": "GPFC",
+      "links": [
+      ]
     },
     {
-      "id": 2,
-      "tags": ["design"],
-      "title": "GPFC",
-      "description": "Logo design for a Prague parkour club",
-      "links": {
-        "external": "https://parkourpraha.cz/",
-        "router": null,
-        "img": "SmallCard_GPFC.png"
-      }
+      "header": "CK Panter",
+      "description": "WordPress website for a travel agency.",
+      "image": "CKPanter",
+      "links": [
+        {
+          "url": "http://www.ckpanter.cz/",
+          "type": "Link",
+          "text": "Visit the site"
+        }
+      ]
     },
     {
-      "id": 3,
-      "tags": ["design"],
-      "title": "3D Dárky",
-      "description": "Brand design for a student company",
-      "links": {
-        "external": "https://www.3d-darky.cz/",
-        "router": null,
-        "img": "SmallCard_3DDarky.png"
-      }
+      "header": "3D Dárky",
+      "description": "A brand and logo design for a Czech student company making 3D printed gifts.",
+      "image": "3DDarky",
+      "links": [
+      ]
     },
     {
-      "id": 4,
-      "tags": ["design", "website"],
-      "title": "Adam Bárta",
-      "description": "My website and branding process",
-      "links": {
-        "external": null,
-        "router": null,
-        "img": "SmallCard_AdamBarta.jpg"
-      }
+      "header": "Syro",
+      "description": "Top-down shooter where your controls change once in a while. This game was made for the 48-hour GMTK Game Jam 2020.",
+      "image": "Syro",
+      "links": [
+        {
+          "url": "https://peanutbutte7.itch.io/syro-a-game-where-your-key-bindings-are-out-of-control",
+          "type": "Itch",
+          "text": "Play it on Itch.io"
+        }
+      ]
     },
     {
-      "id": 5,
-      "tags": ["game"],
-      "title": "Dynamite Crush",
-      "description": "Small puzzle game made in a week",
-      "links": {
-        "external": "https://peanutbutte7.itch.io/dynamitecrush",
-        "router": null,
-        "img": "SmallCard_DynamiteCrush.png"
-      }
+      "header": "Dynamite Crush",
+      "description": "Small grid-based puzzle game made in a week.",
+      "image": "DynamiteCrush",
+      "links": [
+        {
+          "url": "https://peanutbutte7.itch.io/dynamitecrush",
+          "type": "Itch",
+          "text": "Play it on Itch.io"
+        }
+      ]
     },
     {
-      "id": 6,
-      "tags": ["game"],
-      "title": "Backpacked",
-      "description": "Top-down shooter made in 48 hours",
-      "links": {
-        "external": "https://peanutbutte7.itch.io/dynamitecrush",
-        "router": null,
-        "img": "SmallCard_Backpacked.png"
-      }
-    }
-  ],
-  "skills": [
-    {
-      "id": 1,
-      "title": "Web development",
-      "skillItems": ["Javascript & Vue", "Bootstrap", "HTML & CSS / SCSS"],
-      "button": false
-    },
-    {
-      "id": 2,
-      "title": "Design",
-      "skillItems": ["UI & UX design", "Brand identity design", "Logo design", "Vector illustrations"],
-      "button": false
-    },
-    {
-      "id": 3,
-      "title": "Copy writing",
-      "skillItems": null,
-      "subtitle": "As a videogame fan I like to try and make games on my own. It isn't easy and I haven't released any game yet but I sure have learned a lot along the way",
-      "button": false
-    },
-    {
-      "id": 4,
-      "title": "Video production",
-      "skillItems": null,
-      "subtitle": "As a videogame fan I like to try and make games on my own. It isn't easy and I haven't released any game yet but I sure have learned a lot along the way",
-      "button": false
+      "header": "Backpacked",
+      "description": "Top-down shooter made for the 48h Quarantine Game Jam.",
+      "image": "Backpacked",
+      "links": [
+        {
+          "url": "https://peanutbutte7.itch.io/backpacked",
+          "type": "Itch",
+          "text": "Play it on Itch.io"
+        }
+      ]
     }
   ]
 }

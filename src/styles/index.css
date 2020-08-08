@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --color-primary: #1A202C;
+    --color-accent: #A0AEC0;
+    --color-background: #FFFFFF;
+}
+
+/*.dark-mode {*/
+/*    --color-primary: #F7FAFC;*/
+/*    --color-accent: #CBD5E0;*/
+/*    --color-background: #1A202C;*/
+/*}*/
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-primary: #F7FAFC;
+        --color-accent: #4A5568;
+        --color-background: #1A202C;
+    }
+
+    img {
+        opacity: .75;
+        transition: opacity .5s ease-in-out;
+    }
+    img:hover {
+        opacity: 1;
+    }
+}
+
+a {
+    font-weight: 500;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

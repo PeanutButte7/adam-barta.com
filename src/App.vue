@@ -2,7 +2,7 @@
     <div id="app" class="container mx-auto mb-10">
         <nav class="flex items-center mt-10 mb-0 lg:mt-20 lg:mb-6">
             <div class="flex items-center flex-shrink-0 mr-6">
-                <img src="./assets/HeadshotRound.jpf" alt="My photo" class="opacity-100 h-12">
+                <img src="./assets/HeadshotRound.png" alt="My photo" class="opacity-100 h-12">
                 <router-link to="/" class="text-3xl font-semibold leading-tight text-primary ml-4">Adam Barta</router-link>
             </div>
             <div class="flex flex-grow md:hidden">
